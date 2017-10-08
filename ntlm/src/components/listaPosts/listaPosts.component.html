@@ -1,0 +1,21 @@
+
+<h3>Ultimos Posts</h3>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Desde</th>
+            <th>Hacia</th>
+            <th>User</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of posts">
+            <td>{{post.fecha | date:'dd/MM/yyyy'}}</td>
+            <td>{{post.desde}}</td>
+            <td>{{post.hacia}}</td>
+            <td>{{post.postedBy.name}}</td>
+        </tr>
+    </tbody>
+</table>
+
